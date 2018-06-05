@@ -15,6 +15,10 @@ Route::get('/','HomeController@index');
  
 Route::post('/','HomeController@postIndex');
 
+Route::get('/new','HomeController@createTask');
+
+Route::post('/new','HomeController@saveTask');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
