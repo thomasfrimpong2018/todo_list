@@ -17,7 +17,7 @@
                     You are logged in!
                 </div>
                 <div class="container">
-                   <h2>Your Items</h2><hr>
+                   <h2>Your Items</h2><small><a href="/new">Create New Task</a></small><hr>
                    <ul>
                    @foreach($items as $item)
                      <li>
