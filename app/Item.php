@@ -14,4 +14,11 @@ class Item extends Model
     public $primaryKey='id';
    //Timestamp
    public $timestamp =true;
+
+//function to mark item as done or undone
+   public function mark(){
+
+      $this->done=$this->done ? false : true;
+      $this->save();
+   }
 }
