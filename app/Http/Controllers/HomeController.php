@@ -72,7 +72,7 @@ class HomeController extends Controller
 
         $item=Item::find($id);
 
-        if($user_id==$item->user_id){
+        if($user_id==auth()->user()->id){
         $item->delete();
        }
         return redirect('/');
