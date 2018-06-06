@@ -19,6 +19,8 @@ Route::get('/new','HomeController@createTask');
 
 Route::post('/newtask','HomeController@saveTask');
 
+Route::delete('/delete/{item}','HomeController@deleteTask');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
