@@ -71,7 +71,10 @@ class HomeController extends Controller
     public function deleteTask($id){
 
         $item=Item::find($id);
+
+        if($user_id==$item->user_id){
         $item->delete();
+       }
         return redirect('/');
     }
 }
