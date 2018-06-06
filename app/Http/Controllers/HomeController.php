@@ -67,4 +67,11 @@ class HomeController extends Controller
      return redirect('/');
         
     }
+
+    public function deleteTask($id){
+
+        $item=Item::find($id);
+        $item->delete();
+        return redirect('/');
+    }
 }
