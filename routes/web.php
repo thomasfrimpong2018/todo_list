@@ -17,7 +17,7 @@ Route::post('/','HomeController@postIndex');
 
 Route::get('/new','HomeController@createTask');
 
-Route::post('/new','HomeController@saveTask');
+Route::post('/newtask','HomeController@saveTask');
 
 Auth::routes();
 
